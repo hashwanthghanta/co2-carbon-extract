@@ -1,0 +1,223 @@
+/*
+=====================================================
+  DemoScreenStyle.uss
+  Demo Screen Stylesheet - CO2 Capture Project
+=====================================================
+*/
+
+.demo-root {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+    background-color: rgb(6, 14, 22);
+}
+
+.demo-tint {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.demo-title {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 8px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.demo-subtitle {
+    font-size: 14px;
+    color: rgb(0, 210, 255);
+    -unity-text-align: middle-center;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.demo-title-rule {
+    width: 400px;
+    height: 2px;
+    background-color: rgb(0, 210, 255);
+    margin-top: 8px;
+    margin-bottom: 25px;
+    opacity: 0.65;
+    align-self: center;
+}
+
+.demo-body {
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+}
+
+.video-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    flex-grow: 1;
+}
+
+.video-frame {
+    width: 2500px;
+    height: 1400px;
+    background-color: rgb(3, 6, 12);
+    border-color: rgb(0, 180, 220);
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.video-label {
+    font-size: 15px;
+    color: rgba(0, 210, 255, 0.55);
+    -unity-text-align: middle-center;
+    margin-top: 14px;
+    letter-spacing: 4px;
+}
+
+.buttons-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 480px;
+    margin-left: -80px;
+    margin-right: 20px;
+}
+
+/* ── PLAY/PAUSE — stays blue ── */
+.btn-playpause {
+    width: 420px;
+    height: 90px;
+    margin-bottom: 18px;
+    background-color: rgb(15, 80, 180);
+    border-color: rgb(0, 140, 255);
+    border-width: 2px;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-playpause:hover {
+    background-color: rgb(10, 55, 140);
+    border-color: rgb(80, 180, 255);
+    scale: 1.04;
+}
+
+.btn-playpause:active {
+    background-color: rgb(6, 38, 105);
+    scale: 0.97;
+}
+
+/* ── REPLAY — matches BACK TO MAIN MENU ── */
+.btn-replay {
+    width: 420px;
+    height: 80px;
+    margin-bottom: 16px;
+    background-color: rgba(15, 25, 45, 0.85);
+    border-color: rgba(0, 210, 255, 0.4);
+    border-width: 1px;
+    border-radius: 6px;
+    color: rgb(200, 225, 255);
+    font-size: 16px;
+    letter-spacing: 3px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-replay:hover {
+    background-color: rgba(20, 40, 70, 0.9);
+    border-color: rgb(0, 210, 255);
+    scale: 1.04;
+}
+
+.btn-replay:active {
+    background-color: rgba(10, 18, 35, 0.95);
+    scale: 0.97;
+}
+
+/* ── GO TO SIMULATION — matches BACK TO MAIN MENU ── */
+.btn-simulation {
+    width: 420px;
+    height: 80px;
+    margin-bottom: 16px;
+    background-color: rgba(15, 25, 45, 0.85);
+    border-color: rgba(0, 210, 255, 0.4);
+    border-width: 1px;
+    border-radius: 6px;
+    color: rgb(200, 225, 255);
+    font-size: 16px;
+    letter-spacing: 3px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-simulation:hover {
+    background-color: rgba(20, 40, 70, 0.9);
+    border-color: rgb(0, 210, 255);
+    scale: 1.04;
+}
+
+.btn-simulation:active {
+    background-color: rgba(10, 18, 35, 0.95);
+    scale: 0.97;
+}
+
+/* ── BACK TO MAIN MENU + QUIT APP — same dark style ── */
+.btn-mainmenu {
+    width: 420px;
+    height: 80px;
+    margin-bottom: 16px;
+    background-color: rgba(15, 25, 45, 0.85);
+    border-color: rgba(0, 210, 255, 0.4);
+    border-width: 1px;
+    border-radius: 6px;
+    color: rgb(200, 225, 255);
+    font-size: 16px;
+    letter-spacing: 3px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-mainmenu:hover {
+    background-color: rgba(20, 40, 70, 0.9);
+    border-color: rgb(0, 210, 255);
+    scale: 1.04;
+}
+
+.btn-mainmenu:active {
+    background-color: rgba(10, 18, 35, 0.95);
+    scale: 0.97;
+}
